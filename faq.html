@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Share - #1 Discord Bump Bot</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="text-white font-sans">
+    <style>
+      body, html {
+        background-color: #1e2a47 !important; /* Dark, deep blue base */
+        background-attachment: fixed !important;
+        background-image: radial-gradient(
+          at 15% 15%, 
+          hsl(210deg 80% 50%) 0%, /* Lighter blue at the top-left */
+          transparent 60%
+        ),
+        radial-gradient(
+          at 85% 85%, 
+          hsl(190deg 100% 45%) 0%, /* Soft blue at the bottom-right */
+          transparent 50%
+        ) !important;
+      }
+    </style>
+  </body>   
+  <!-- Navbar -->
+  <header class="bg-blue-900 bg-opacity-80 py-4 shadow-md fixed top-0 w-full z-50">
+    <div class="container mx-auto flex items-center justify-between px-4">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+          <img src="botlogo.png" alt="Global Share Logo" class="w-13 h-13">
+        </div>
+        <span class="text-2xl font-bold">Global Share</span>
+      </div>
+      <!-- Mobile Menu Toggle -->
+<button class="block md:hidden focus:outline-none" id="menu-toggle">
+  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+  </svg>
+</button>
+
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex space-x-6">
+  <a href="index.html" class="hover:text-blue-300">Home</a>
+  <a href="https://dsc.gg/global-share" class="hover:text-blue-300">Invite</a>
+  <a href="https://dsc.gg/support-globalshare" class="hover:text-blue-300">Support</a>
+  <a href="premium.html" class="hover:text-blue-300">Premium</a>
+</nav>
+
+<!-- Desktop Action Buttons -->
+<div class="hidden md:flex space-x-4">
+  <button class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded transition">Dashboard</button>
+  <button class="px-6 py-3 bg-gray-300 text-blue-900 hover:bg-gray-400 rounded transition">Logout</button>
+</div>
+
+<!-- Mobile Dropdown Menu -->
+<nav class="hidden md:hidden absolute top-24 right-0 transform translate-x-0 flex flex-col space-y-6 bg-blue-900 text-white px-4 py-3 transition duration-300" id="mobile-menu">
+  <a href="index.html" class="hover:text-blue-400 text-right">Home</a>
+  <a href="https://dsc.gg/global-share" class="hover:text-blue-300 text-right">Invite</a>
+  <a href="https://dsc.gg/support-globalshare" class="hover:text-blue-400 text-right">Support</a>
+  <a href="premium.html" class="hover:text-blue-400 text-right">Premium</a>
+  <button class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded transition text-right">Dashboard</button>
+  <button class="px-6 py-3 bg-gray-300 text-blue-900 hover:bg-gray-400 rounded transition text-right">Logout</button>
+</nav>  
+</header>
+        <!-- FAQ Section -->
+<h1 class="heading mt-20 text-4xl text-center">Frequently Asked Questions (FAQ)</h1>
+
+<div class="faq-container max-w-4xl mx-auto space-y-6 p-4 sm:px-6 md:px-8">
+  <div class="faq-question bg-gray-800 p-6 rounded-lg shadow-lg">
+    <h3 class="text-xl font-semibold">1. How can I contact support?</h3>
+    <blockquote class="bg-gray-700 p-4 rounded mt-2">
+      <p>You can reach out to our support team via the <a href="https://dsc.gg/support-globalshare" class="text-yellow-400">support link</a> or by sending a direct message to our support bot on Discord.</p>
+    </blockquote>
+  </div>
+
+  <div class="faq-question bg-gray-800 p-6 rounded-lg shadow-lg">
+    <h3 class="text-xl font-semibold">2. What payment methods do you accept?</h3>
+    <blockquote class="bg-gray-700 p-4 rounded mt-2">
+      <p>We accept various payment methods including PayPal, Bkash, Nagad, and credit/debit cards.</p>
+    </blockquote>
+  </div>
+
+  <div class="faq-question bg-gray-800 p-6 rounded-lg shadow-lg">
+    <h3 class="text-xl font-semibold">3. How can I upgrade to premium?</h3>
+    <blockquote class="bg-gray-700 p-4 rounded mt-2">
+      <p>You can upgrade to premium by visiting our <a href="premium.html" class="text-yellow-400">Premium</a> page and choosing your desired plan.</p>
+    </blockquote>
+  </div>
+
+  <div class="faq-question bg-gray-800 p-6 rounded-lg shadow-lg">
+    <h3 class="text-xl font-semibold">4. How do I use the Global Share bot for server growth?</h3>
+    <blockquote class="bg-gray-700 p-4 rounded mt-2">
+      <p>To use the Global Share bot for server growth, simply invite it to your server using the <a href="https://dsc.gg/global-share" class="text-yellow-400">invite link</a> and follow the instructions provided in the setup guide.</p>
+    </blockquote>
+  </div>
+</div>
+<!-- Footer Section -->
+<footer class="bg-blue-900 bg-opacity-80 text-white py-8">
+  <div class="container mx-auto px-4">
+    <!-- Logo & Brand Name (Centered) -->
+    <div class="flex flex-col items-center mb-6 md:mb-0">
+      <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-4">
+        <img src="botlogo.png" alt="Global Share Logo" class="w-13 h-13">
+      </div>
+      <span class="text-2xl font-bold">Global Share</span>
+    </div>
+
+    <!-- Footer Links (Desktop View) -->
+    <div class="hidden md:flex justify-between text-center mb-6">
+      <div class="space-x-8">
+        <a href="https://dsc.gg/support-globalshare" class="hover:text-blue-300">Support Server</a>
+        <a href="premium.html" class="hover:text-blue-300">Buy Premium</a>
+        <a href="#" class="hover:text-blue-300">Docs</a>
+      </div>
+      <div class="space-x-8">
+        <a href="faq.html" class="hover:text-blue-300">FAQ</a>
+        <a href="refund.html" class="hover:text-blue-300">Refund Policy</a>
+        <a href="privacy.html" class="hover:text-blue-300">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-blue-300">Terms and Conditions</a>
+      </div>
+    </div>
+
+    <!-- Footer Links (Mobile View) -->
+    <div class="md:hidden flex flex-col space-y-4 text-center mb-6">
+      <a href="https://dsc.gg/support-globalshare" class="hover:text-blue-300">Support Server</a>
+      <a href="premium.html" class="hover:text-blue-300">Buy Premium</a>
+      <a href="#" class="hover:text-blue-300">Docs</a>
+      <a href="faq.html" class="hover:text-blue-300">Bot FAQ</a>
+      <a href="refund.html" class="hover:text-blue-300">Refund Policy</a>
+      <a href="privacy.html" class="hover:text-blue-300">Privacy Policy</a>
+      <a href="terms.html" class="hover:text-blue-300">Terms and Conditions</a>
+    </div>
+
+    <!-- Social Media Links (Optional) -->
+    <div class="flex justify-center space-x-6 mt-6">
+      <a href="#" class="text-blue-400 hover:text-blue-500">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 3a10.5 10.5 0 0 0-2.9-.4c-3.2 0-5.9 2.6-5.9 5.9v2.7h-2.5v3h2.5v7h3v-7h2.7l.4-3h-3.1V8.5c0-1 .3-1.6 1.7-1.6h1.4v-3h-3c-3.4 0-5.5 2.3-5.5 5.4v4h-3v3h3v7h3v-7h2.6v-3z"/>
+        </svg>
+      </a>
+      <a href="#" class="text-blue-400 hover:text-blue-500">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 12c0 6.1-4.9 11-11 11S1 18.1 1 12 5.9 1 12 1s11 4.9 11 11zM12 5.9c-.9 0-1.7.1-2.5.3v4.1h5v-4.1c-.8-.2-1.6-.3-2.5-.3zm4.2 4.3h-5v5h5v-5zm-4.2 6.1h-5v5h5v-5z"/>
+        </svg>
+      </a>
+      <a href="#" class="text-blue-400 hover:text-blue-500">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 2a10 10 0 0 1-10 10 10 10 0 0 1-10-10 10 10 0 0 1 10-10 10 10 0 0 1 10 10zm-4 0v4a4 4 0 0 0-4 4h4v4h-4V8h-4v4h4v4h4v-4h-4v4h-4v-4h4z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="mt-6 text-center text-sm text-gray-400">
+    <p>&copy; 2024 Global Share. All rights reserved.</p>
+  </div>
+</footer>  
+<!-- JavaScript for Mobile Menu Toggle -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>

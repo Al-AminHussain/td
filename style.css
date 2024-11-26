@@ -1,0 +1,26 @@
+.neon-button {
+  display: inline-block;
+  color: #fff;
+  background-color: transparent;
+  padding: 12px 24px;
+  border: 2px solid #0ff; /* Cyan border for neon effect */
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 8px #0ff, 0 0 16px #0ff;
+}
+
+.neon-button:hover {
+  background-color: #0ff;
+  color: #000;
+  box-shadow: 0 0 12px #0ff, 0 0 24px #0ff;
+}
+
+.flex-col.items-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

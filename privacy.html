@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Share - #1 Discord Bump Bot</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="text-white font-sans">
+    <style>
+      body, html {
+        background-color: #1e2a47 !important; /* Dark, deep blue base */
+        background-attachment: fixed !important;
+        background-image: radial-gradient(
+          at 15% 15%, 
+          hsl(210deg 80% 50%) 0%, /* Lighter blue at the top-left */
+          transparent 60%
+        ),
+        radial-gradient(
+          at 85% 85%, 
+          hsl(190deg 100% 45%) 0%, /* Soft blue at the bottom-right */
+          transparent 50%
+        ) !important;
+      }
+    </style>
+  </body>   
+  <!-- Navbar -->
+  <header class="bg-blue-900 bg-opacity-80 py-4 shadow-md fixed top-0 w-full z-50">
+    <div class="container mx-auto flex items-center justify-between px-4">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+          <img src="botlogo.png" alt="Global Share Logo" class="w-13 h-13">
+        </div>
+        <span class="text-2xl font-bold">Global Share</span>
+      </div>
+      <!-- Mobile Menu Toggle -->
+<button class="block md:hidden focus:outline-none" id="menu-toggle">
+  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+  </svg>
+</button>
+
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex space-x-6">
+  <a href="index.html" class="hover:text-blue-300">Home</a>
+  <a href="https://dsc.gg/global-share" class="hover:text-blue-300">Invite</a>
+  <a href="https://dsc.gg/support-globalshare" class="hover:text-blue-300">Support</a>
+  <a href="premium.html" class="hover:text-blue-300">Premium</a>
+</nav>
+
+<!-- Desktop Action Buttons -->
+<div class="hidden md:flex space-x-4">
+  <button class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded transition">Dashboard</button>
+  <button class="px-6 py-3 bg-gray-300 text-blue-900 hover:bg-gray-400 rounded transition">Logout</button>
+</div>
+
+<!-- Mobile Dropdown Menu -->
+<nav class="hidden md:hidden absolute top-24 right-0 transform translate-x-0 flex flex-col space-y-6 bg-blue-900 text-white px-4 py-3 transition duration-300" id="mobile-menu">
+  <a href="index.html" class="hover:text-blue-400 text-right">Home</a>
+  <a href="https://dsc.gg/global-share" class="hover:text-blue-300 text-right">Invite</a>
+  <a href="https://dsc.gg/support-globalshare" class="hover:text-blue-400 text-right">Support</a>
+  <a href="premium.html" class="hover:text-blue-400 text-right">Premium</a>
+  <button class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded transition text-right">Dashboard</button>
+  <button class="px-6 py-3 bg-gray-300 text-blue-900 hover:bg-gray-400 rounded transition text-right">Logout</button>
+</nav>  
+</header>
+  <!-- Refund Policy Content -->
+<div class="container mx-auto mt-24 px-4 py-8">
+  <h1 class="text-3xl font-bold mb-4 text-center sm:text-4xl">Privacy Policy</h1>
+  <p class="text-center sm:text-left"><strong>Effective Date:</strong> 4/11/2024</p>
+
+  <p class="mt-4">We appreciate you choosing Global Share Bot. This Privacy Policy explains the types of information we gather, the way we use it, and the measures we take to secure your data. By using Global Share, you agree to the terms outlined in this policy. Your trust is essential to us, and we are committed to maintaining your privacy with transparency.</p>
+
+  <h2 class="text-2xl font-semibold mt-6">1. Information We Collect and How We Use It</h2>
+  <p class="mt-2">While using Global Share, we may collect non-personal information, such as the name and description of the server, as well as additional details provided during bot installation. This data is primarily used to enhance our services, improve user experience, and for analytics purposes to optimize performance. We may also monitor server interaction patterns to identify trends and improve user engagement.</p>
+  <p class="mt-2">In certain cases, we may collect user feedback and interactions for better service insights. This information is anonymized and helps in making service adjustments. For example, we may use survey data to tailor new features or address specific user requests.</p>
+
+  <h2 class="text-2xl font-semibold mt-6">2. Data Protection</h2>
+  <p class="mt-2">We take the necessary precautions to protect the non-personal information received through Global Share, utilizing security protocols like encryption and access controls. Although we implement robust security measures, we cannot guarantee the absolute safety of your data, as no online communication or storage method is entirely risk-free. We advise users to maintain updated security practices for their servers as an additional safety measure.</p>
+  <p class="mt-2">Our team regularly reviews security practices to ensure the highest level of protection against potential breaches and unauthorized access. We also provide training to our staff to keep them informed about the latest data security standards.</p>
+
+  <h2 class="text-2xl font-semibold mt-6">3. Sharing of Information</h2>
+  <p class="mt-2">Global Share will not share any user data with third parties without your explicit consent. We may use non-personal data for service improvements, but we will not disclose it to external parties without permission. In the event of legal requirements or court orders, we may disclose information as required by law. Users will be notified if such a situation arises, whenever possible and permitted by law.</p>
+
+  <h2 class="text-2xl font-semibold mt-6">4. Use of Cookies and Tracking</h2>
+  <p class="mt-2">Global Share does not utilize cookies or any other tracking technologies to gather user data. We focus on maintaining a simple, non-intrusive user experience. If we ever introduce cookies or tracking tools, users will be informed, and consent will be requested beforehand.</p>
+
+  <h2 class="text-2xl font-semibold mt-6">5. Data Retention and Deletion</h2>
+  <p class="mt-2">We retain non-personal data until it is requested for deletion by the server owner or administrator. Such requests will be processed within thirty days. Upon deletion, data is permanently removed from our active databases and cannot be restored. For verification purposes, we may maintain minimal records of deletion requests.</p>
+  <p class="mt-2">We encourage server administrators to regularly review data and request deletions if necessary for maintaining privacy. This proactive approach helps to ensure data accuracy and relevancy.</p>
+
+  <h2 class="text-2xl font-semibold mt-6">6. Modifications to This Policy</h2>
+  <p class="mt-2">We may update this Privacy Policy as needed to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any significant changes will be posted on this page, and users will be notified. Please check this policy periodically to stay updated on how we protect your information. Your continued use of Global Share following any modifications to this policy signifies your acceptance of the changes.</p>
+
+  <h2 class="text-2xl font-semibold mt-6">7. User Rights and Access</h2>
+  <p class="mt-2">As a user, you have the right to access, modify, or request the deletion of your data. To exercise these rights, please contact us at the provided email address. We aim to respond to all data requests promptly and transparently. Users may also request information about data use practices or raise concerns regarding privacy, and we will address these as swiftly as possible.</p>
+
+  <h2 class="text-2xl font-semibold mt-6">8. Contact Information</h2>
+  <p class="mt-2">If you have any questions or concerns regarding this Privacy Policy, please reach out to us at <a href="mailto:contactus.globalshare@gmail.com" class="text-blue-400 hover:underline">contactus.globalshare@gmail.com</a>. Our team is committed to assisting you with any privacy-related issues or clarifications you may need.</p>
+</div>
+</div>
+<!-- Footer Section -->
+<footer class="bg-blue-900 bg-opacity-80 text-white py-8">
+  <div class="container mx-auto px-4">
+    <!-- Logo & Brand Name (Centered) -->
+    <div class="flex flex-col items-center mb-6 md:mb-0">
+      <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-4">
+        <img src="botlogo.png" alt="Global Share Logo" class="w-13 h-13">
+      </div>
+      <span class="text-2xl font-bold">Global Share</span>
+    </div>
+
+    <!-- Footer Links (Desktop View) -->
+    <div class="hidden md:flex justify-between text-center mb-6">
+      <div class="space-x-8">
+        <a href="https://dsc.gg/support-globalshare" class="hover:text-blue-300">Support Server</a>
+        <a href="premium.html" class="hover:text-blue-300">Buy Premium</a>
+        <a href="#" class="hover:text-blue-300">Docs</a>
+      </div>
+      <div class="space-x-8">
+        <a href="faq.html" class="hover:text-blue-300">FAQ</a>
+        <a href="refund.html" class="hover:text-blue-300">Refund Policy</a>
+        <a href="privacy.html" class="hover:text-blue-300">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-blue-300">Terms and Conditions</a>
+      </div>
+    </div>
+
+    <!-- Footer Links (Mobile View) -->
+    <div class="md:hidden flex flex-col space-y-4 text-center mb-6">
+      <a href="https://dsc.gg/support-globalshare" class="hover:text-blue-300">Support Server</a>
+      <a href="premium.html" class="hover:text-blue-300">Buy Premium</a>
+      <a href="#" class="hover:text-blue-300">Docs</a>
+      <a href="faq.html" class="hover:text-blue-300">Bot FAQ</a>
+      <a href="refund.html" class="hover:text-blue-300">Refund Policy</a>
+      <a href="privacy.html" class="hover:text-blue-300">Privacy Policy</a>
+      <a href="terms.html" class="hover:text-blue-300">Terms and Conditions</a>
+    </div>
+
+    <!-- Social Media Links (Optional) -->
+    <div class="flex justify-center space-x-6 mt-6">
+      <a href="#" class="text-blue-400 hover:text-blue-500">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 3a10.5 10.5 0 0 0-2.9-.4c-3.2 0-5.9 2.6-5.9 5.9v2.7h-2.5v3h2.5v7h3v-7h2.7l.4-3h-3.1V8.5c0-1 .3-1.6 1.7-1.6h1.4v-3h-3c-3.4 0-5.5 2.3-5.5 5.4v4h-3v3h3v7h3v-7h2.6v-3z"/>
+        </svg>
+      </a>
+      <a href="#" class="text-blue-400 hover:text-blue-500">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 12c0 6.1-4.9 11-11 11S1 18.1 1 12 5.9 1 12 1s11 4.9 11 11zM12 5.9c-.9 0-1.7.1-2.5.3v4.1h5v-4.1c-.8-.2-1.6-.3-2.5-.3zm4.2 4.3h-5v5h5v-5zm-4.2 6.1h-5v5h5v-5z"/>
+        </svg>
+      </a>
+      <a href="#" class="text-blue-400 hover:text-blue-500">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 2a10 10 0 0 1-10 10 10 10 0 0 1-10-10 10 10 0 0 1 10-10 10 10 0 0 1 10 10zm-4 0v4a4 4 0 0 0-4 4h4v4h-4V8h-4v4h4v4h4v-4h-4v4h-4v-4h4z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="mt-6 text-center text-sm text-gray-400">
+    <p>&copy; 2024 Global Share. All rights reserved.</p>
+  </div>
+</footer>  
+<!-- JavaScript for Mobile Menu Toggle -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
